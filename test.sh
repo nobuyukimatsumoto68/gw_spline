@@ -55,10 +55,18 @@ increment=2
 
 # 832
 
-tmax=8
+tmax=12
 
-ibeta=720
-dq_init=0.01
+ibeta=768
+ibeta=780
+dq_init=0.05
+
+tmax=14
+ibeta=784
+dq_init=0.04
+
+# ibeta=790
+# dq_init=0.026
 
 
 

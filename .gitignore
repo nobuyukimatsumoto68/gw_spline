@@ -1,5 +1,7 @@
 *.dat
+*.cpp
 *.out
 *.o
+*.d
 *.pdf
 .ipynb_checkpoints/
