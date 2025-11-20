@@ -12,7 +12,7 @@ mass=0p2000
 dq_init=0.05
 tmax=14
 START=768
-END=784
+END=800
 
 # dq_init=0.0007
 # tmax=16
@@ -25,7 +25,7 @@ END=784
 
 
 
-INT=2
+INT=1
 increment=2
 
 
@@ -44,7 +44,7 @@ for (( ibeta=$START; ibeta<=$END; ibeta+=$INT ))
 do
     echo "### ibeta=$ibeta ###"
 
-    ./a.out $ibeta $expn $tmax $mass $dq_init $maxiter $tau #
+    ./hist_spline.o $ibeta $expn $tmax $mass $dq_init $maxiter $tau #
 
     value=$(< "./fit_params_32c_m${mass}/c_$ibeta.dat")
     echo $value

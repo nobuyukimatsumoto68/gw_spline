@@ -26,7 +26,7 @@ START=800
 END=850
 
 
-INT=2
+INT=1
 increment=2
 
 
@@ -45,7 +45,7 @@ for (( ibeta=$START; ibeta<=$END; ibeta+=$INT ))
 do
     echo "### ibeta=$ibeta ###"
 
-    ./a.out $ibeta $expn $tmax $mass $dq_init $maxiter $tau #
+    ./hist_spline.o $ibeta $expn $tmax $mass $dq_init $maxiter $tau #
 
     value=$(< "./fit_params_32c_m${mass}/c_$ibeta.dat")
     echo $value
